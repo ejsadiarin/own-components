@@ -3,10 +3,10 @@ import { useState } from 'react';
 export default function FeedbackForm() {
   const [isSent, setIsSent] = useState(false);
   const [message, setMessage] = useState('');
+
   if (isSent) {
-    <h1>Thank you!</h1>;
-  }
-    // eslint-disable-next-line
+    return <h1>Thank you!</h1>;
+  } else {
     return (
       <form onSubmit={e => {
         e.preventDefault();
@@ -19,7 +19,8 @@ export default function FeedbackForm() {
           onChange={e => setMessage(e.target.value)}
         />
         <br />
-        <button type="submit" onClick={e => setMessage('')}>Send</button>
+        <button type="submit">Send</button>
       </form>
     );
+  }
 }
