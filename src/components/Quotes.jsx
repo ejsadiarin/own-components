@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export default function Quotes() {
   const [quote, setQuote] = useState('quote here');
+  // TODO: Implement a previous button functionality
+  // TODO: iterate through an array of string quotes (randomly generated each click)
   // const [isNew, setIsNew] = useState(false);
 
   function handleClick() {
