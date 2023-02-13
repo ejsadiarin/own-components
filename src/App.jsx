@@ -4,6 +4,7 @@ import './App.css'
 import RecipeList from './components/Recipe'
 import Clock from './components/Clock'
 import StoryTray from './components/StoryTray'
+import Quotes from './components/Quotes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,8 @@ function App() {
       {/* Pass time props in Clock component */}
       <Clock time={time}/> 
       <StoryTray />
+      <hr />
+      <Quotes />
     </div>
   )
 }
